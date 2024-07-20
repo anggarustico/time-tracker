@@ -1,0 +1,119 @@
+body {
+    font-family: Arial, sans-serif;
+    margin: 0;
+    padding: 0;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 100vh;
+    background-color: #f0f0f0;
+}
+
+.container {
+    display: flex;
+    width: 100%;
+    max-width: 1200px;
+    height: 100%;
+}
+
+.left-column {
+    flex: 1;
+    padding: 20px;
+    box-sizing: border-box;
+}
+
+.right-column {
+    flex: 0 0 400px; /* Adjust as needed for chart width */
+    padding: 20px;
+    box-sizing: border-box;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.left-column h1 {
+    text-align: center;
+}
+
+.main-timer-display {
+    font-size: 48px;
+    margin: 20px 0;
+    text-align: center;
+}
+
+.free-time-display,
+.productive-time-display,
+.time-comparison-display {
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+
+.todo-list {
+    margin-top: 20px;
+}
+
+.todo-item {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    padding: 10px;
+    border-bottom: 1px solid #ccc;
+}
+
+.todo-item span {
+    font-size: 18px;
+}
+
+.todo-item button {
+    margin-top: 10px;
+}
+
+.todo-timer {
+    font-size: 14px;
+    color: #666;
+    margin-top: 5px;
+}
+
+.chart-container {
+    width: 100%;
+    max-width: 100%;
+}
+
+#new-todo-input {
+    padding: 10px;
+    width: calc(100% - 80px);
+    box-sizing: border-box;
+}
+
+#add-todo-btn {
+    padding: 10px;
+}
+
+/* Media Queries for Responsiveness */
+@media (max-width: 600px) {
+    .main-timer-display {
+        font-size: 36px;
+    }
+
+    .free-time-display,
+    .productive-time-display,
+    .time-comparison-display {
+        font-size: 16px;
+    }
+
+    .todo-item span {
+        font-size: 16px;
+    }
+
+    .todo-item button {
+        padding: 8px;
+    }
+
+    #new-todo-input {
+        width: calc(100% - 70px);
+    }
+
+    #add-todo-btn {
+        padding: 8px;
+    }
+}

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Time Tracker</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="https://cdn.jsdelivr.net/npm/chart.js"></script>
+</head>
+<body>
+    <div class="container">
+        <div class="left-column">
+            <h1>Time Tracker</h1>
+            <div class="active-tdl-title" id="active-tdl-title">Free Time</div>
+            <div class="main-timer-display" id="main-timer-display">00:00:00</div>
+            <div class="free-time-display">
+                <span>Free Time:</span>
+                <span id="free-time-display">00:00:00</span>
+            </div>
+            <div class="productive-time-display">
+                <span>Productive Time:</span>
+                <span id="productive-time-display">00:00:00</span>
+            </div>
+            <div class="time-comparison-display">
+                <span>FT vs PT:</span>
+                <span id="time-comparison-display">0% / 0%</span>
+            </div>
+            <div class="todo-list" id="todo-list">
+                <input type="text" id="new-todo-input" placeholder="Add new to-do">
+                <button id="add-todo-btn">Add</button>
+            </div>
+        </div>
+        <div class="right-column">
+            <div class="chart-container">
+                <canvas id="time-chart"></canvas>
+            </div>
+        </div>
+    </div>
+    <script src="scripts.js"></script>
+</body>
+</html>
